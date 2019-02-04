@@ -709,7 +709,7 @@ end
 local function unpinChannelMessage(channel_id) 
 tdcli_function ({ ID = "UnpinChannelMessage", channel_id_ = getChatId(channel_id).ID }, dl_cb, nil) 
 end 
-local function pinChannelMessage(channel_id, message_id,disable_notification) 
+local function (channel_id, message_id,disable_notification) 
 tdcli_function ({ ID = "PinChannelMessage", channel_id_ = getChatId(channel_id).ID, message_id_ = message_id, disable_notification_ = disable_notification, }, dl_cb, nil) 
 end
 local function berof_sendMssg(chat_id, text, reply_to_message_id, markdown) 
