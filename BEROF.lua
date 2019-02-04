@@ -573,7 +573,7 @@ t = 'مدير 🔖'
 elseif mohmadDEVBEROF:sismember(DEVBERO..'mods:'..chat_id,user_id) then
 t = 'ادمن 📡'
 elseif mohmadDEVBEROF:sismember(DEVBERO..'vip:groups',user_id) then
-t = 'مميز عام ❕'
+t = 'مميز عام '
 elseif mohmadDEVBEROF:sismember(DEVBERO..'vip:group'..chat_id,user_id) then
 t = 'مميز 🔽'
 else
