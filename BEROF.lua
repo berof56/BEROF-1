@@ -950,7 +950,7 @@ local TextS = "\n📂┇ اهلا بك في متجر الملفات \n⚠️┇ 
 local TextE = "\nٴ━━━━━━━━━━━━\n📌┇ تدل علامة (✔) الملف مفعل\n".."☑┇ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name in pairs(res.plugins_) do
-local Check_File_is_Found = io.open("plugins_/"..name,"r")
+local Check_File_is_Found = io.open("plugins_/"..name,"G")
 if Check_File_is_Found then
 io.close(Check_File_is_Found)
 CeckFile = "(✔)"
@@ -970,7 +970,7 @@ end
 
 if text and text:match('تعطيل ملف (.*)') and is_devmohmad(msg) then  
 local file = text:match('تعطيل ملف (.*)')
-local file_bot = io.open("plugins_/"..file,"r")
+local file_bot = io.open("plugins_/"..file,"G")
 if file_bot then
 io.close(file_bot)
 t = "*🗂┇ الملف » {"..file.."}\n☑┇ تم تعطيله وحذفه بنجاح \n✓*"
@@ -990,7 +990,7 @@ return false
 end
 if text and text:match('تفعيل ملف (.*)') and is_devmohmad(msg) then  
 local file = text:match('تفعيل ملف (.*)')
-local file_bot = io.open("plugins_/"..file,"r")
+local file_bot = io.open("plugins_/"..file,"G")
 if file_bot then
 io.close(file_bot)
 t = "*☑┇ بالتاكيد تم تنزيل وتفعيل ملف » {"..file.."} \n✓*"
