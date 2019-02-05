@@ -9442,9 +9442,9 @@ return false  end
 mohmadDEVBEROF:del(DEVBERO.."CHENG:ID"..msg.chat_id_..""..msg.sender_user_id_) 
 local CHENGER_ID = text:match("(.*)")  
 if CHENGER_ID:find('NKOGET') then
-local filegames = io.open("plugins_/games.lua","r")
-if not filegames then
-berof_sendMsg(msg.chat_id_, msg.id_, 1,'\n🗂┇ لا يمكنك وضع دالة طبع عدد النقود في كليشة الايدي يرجى تفعيل الملف ارسل ` تفعيل ملف games.lua`\n', 1, 'md')    
+local filegeeem = io.open("plugins_/geeem.lua","r")
+if not filegeeem then
+berof_sendMsg(msg.chat_id_, msg.id_, 1,'\n🗂┇ لا يمكنك وضع دالة طبع عدد النقود في كليشة الايدي يرجى تفعيل الملف ارسل ` تفعيل ملف geeem.lua`\n', 1, 'md')    
 return false  end 
 end
 mohmadDEVBEROF:set(DEVBERO.."KLISH:ID",CHENGER_ID)
@@ -9476,7 +9476,7 @@ end
 local msguser = tonumber(mohmadDEVBEROF:get(DEVBERO..'user:messages:'..msg.chat_id_..':'..msg.sender_user_id_) or 1) 
 local addmempar = tonumber(mohmadDEVBEROF:get(DEVBERO..'add:mempar'..msg.chat_id_..':'..msg.sender_user_id_) or 0) 
 t = get_rtpa(msg.chat_id_,msg.sender_user_id_)
-NUMPGAME = (mohmadDEVBEROF:get(DEVBERO..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_) or 0)
+NUMPGAME = (mohmadDEVBEROF:get(DEVBERO..'NUM:geeem'..msg.chat_id_..msg.sender_user_id_) or 0)
 if tonumber(NUMPGAME) == 0 then
 nko = '0'
 else
